@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لعبة الطفش 🎮</title>
+<style>
+body{font-family:Arial;text-align:center;background:#15152b;color:white;padding:20px}
+h1{color:#ffd54a}
+button{padding:16px;margin:8px;border:0;border-radius:14px;background:#7357ff;color:white;font-size:18px}
+#result{font-size:25px;margin:25px}
+</style>
+</head>
+<body>
+<h1>🎮 تحدي الطفش</h1>
+<p>اختر لعبة واستمتع مع أصحابك!</p>
+<button onclick="start(1)">⚡ تحدي السرعة</button>
+<button onclick="start(2)">🧠 لغز</button>
+<button onclick="start(3)">😂 سؤال مضحك</button>
+<div id="result">اختر لعبة وابدأ التحدي!</div>
+<script>
+function start(n){
+let r=document.getElementById('result');
+if(n===1)r.innerHTML='⚡ اضغط موافق بأسرع ما تقدر!<br><button onclick="alert(\'بطل! دور صاحبك الآن 😎\')">موافق!</button>';
+if(n===2)r.innerHTML='🧠 شيء له أسنان ولا يعض، وش هو؟<br><button onclick="alert(\'الإجابة: المشط! 🎉\')">اكشف الإجابة</button>';
+if(n===3)r.innerHTML='😂 لو صرت غير مرئي ليوم كامل، وش بتسوي؟';
+}
+</script>
+</body>
+  </html>
+  
